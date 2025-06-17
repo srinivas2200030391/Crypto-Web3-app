@@ -1,11 +1,15 @@
-import React from 'react'
+import { Navbar,Footer,Loader,Services,Transactions,Welcome } from "./components"
 
 export default function App() {
   return (
-    <div>
-      <h1>
-        App
-      </h1>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome/>
+      </div>
+      <Services />
+      <Transactions />
+      <Footer/>
     </div>
   )
 }
